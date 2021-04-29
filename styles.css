@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 20vh auto;
+    background-color: #121212;
+}
+
+img {
+    height: 5rem;
+    width: auto;
+    border-radius: 50%;
+    border: 3px solid #EEE;
+    box-shadow: 10px 5px 5px rgb(15, 15, 15);
+}
+
+.bubble {
+    background-color: rgb(26, 129, 95);
+    max-width: 34rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 0 1.8rem;
+    box-shadow: 10px 5px 5px rgb(15, 15, 15);
+}
+
+#container-1, #container-3 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#container-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-1, #container-2, #container-3 {
+    margin: 2.5rem auto;
+    position: relative;
+}
+
+.name {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #EEE;
+}
+
+.comment {
+    color: #EEE;
+    font-size: 0.75rem;
+}
+
+.triangle-right {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 17.3px;
+    border-color: transparent transparent transparent rgb(26, 129, 95);
+    position: absolute;
+    left: 57rem;
+    top: 2rem;
+}
+
+.triangle-left {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 17.3px 10px 0;
+    border-color: transparent #1a815f transparent transparent;
+    position: absolute;
+    right: 57rem;
+    top: 2rem;
+}
+
+.time {
+    color: white;
+    position: absolute;
+    font-size: 0.7rem;
+    left: 480px;
+    top: 5.2rem;
+    opacity: 0;
+}
+
+.time2 {
+    color: white;
+    position: absolute;
+    font-size: 0.7rem;
+    left: 400px;
+    top: 5.2rem;
+    opacity: 0;
+}
+
+.bubble:hover > .time {
+    transition: all 0.3s ease-in-out;
+    transform: translateY(70%);
+    opacity: 1;
+}
+
+.bubble:hover>.time2 {
+    transition: all 0.3s ease-in-out;
+    transform: translateY(70%);
+    opacity: 1;
+}
