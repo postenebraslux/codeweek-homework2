@@ -87,7 +87,7 @@ img {
     position: absolute;
     font-size: 0.7rem;
     right: 10px;
-    top: 5.2rem;
+    bottom: -8px;
     opacity: 0;
 }
 
@@ -96,7 +96,7 @@ img {
     position: absolute;
     font-size: 0.7rem;
     left: 10px;
-    top: 5.2rem;
+    bottom: -8px;
     opacity: 0;
 }
 
